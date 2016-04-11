@@ -1,0 +1,28 @@
+/** {
+	border: 1px solid red;
+}*/
+
+h4 {
+	font-weight: bold;
+	color: #3d6f86 !important;
+}
+#btn1 {
+	margin: 7px 13px;
+}
+#btn2 {
+	margin: 7px 13px;
+}
+#btn3 {
+	margin: 7px 13px;
+}
+#accordion {
+	margin: 10px 10px;
+}
+.panel-heading {
+	background-color: #d9edf6 !important;
+}
+.glyphicon-triangle-bottom {
+	display: inline-block;
+	font-size: 50%;
+	padding-right: 3px;
+}
