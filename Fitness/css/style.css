@@ -1,0 +1,146 @@
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	width: 1060px;
+	padding: 50px;
+	margin: 0 auto;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.3)
+}
+
+/*Шапка*/
+
+nav {
+	min-height: 40px;
+	background: linear-gradient(#5e5e5e, #444343);
+}
+ul.nav {
+	padding: 0;
+	margin: 40px 0;
+}
+nav ul.nav li {
+	display: inline-block;
+	list-style-type: none;
+	line-height: 40px;
+	padding: 0 24px;
+	font-size: 15px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	margin-right: -1px;
+}
+.nav a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+nav ul.nav li:hover {
+	background: linear-gradient(#4a4a4a, #2e2e2e);
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+	transition: border 0.2s;
+}
+nav ul.nav li:active,
+nav ul.nav li.active {
+	background: linear-gradient(#4a4a4a, #2e2e2e);
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+
+.logo a {
+	display: inline-block;
+}
+
+/*Боковая панель навигации*/
+
+aside {
+	width: 240px;
+	display: inline-block;
+	vertical-align: top;
+}
+ul.nav-aside {
+	padding-left: 0;
+	margin: 0;
+}
+.nav-aside li {
+	min-height: 40px;
+	border: 1px solid #c8c8c8;
+	list-style-type: none;
+	padding-left: 24px;
+	line-height: 40px;
+}
+.nav-aside a {
+	display: block;
+	text-decoration: none;
+	color: #656363;
+	transition: all 0.3s;
+}
+.nav-aside li:hover {
+	text-indent: 10px;
+	background-color: #f2f0f0;
+}
+.nav-aside li:active,
+.nav-aside li.active {
+	background-color: #f2f0f0;
+	text-indent: 10px;
+}
+
+/*Центральный блок*/
+
+article {
+	display: inline-block;
+	margin-left: 38px;
+	width: 678px;
+}
+.item-image {
+	height: 400px;
+	background: url(../img/main.jpg) center center no-repeat;
+	border: 1px solid #c8c8c8;
+}
+article p {
+	padding: 40px 25px;
+	margin: 0;
+	line-height: 21px;
+}
+
+/*Footer*/
+
+.nav-footer {
+	min-height: 40px;
+	background: #e1e1e1;
+}
+ul.nav-footer {
+	padding: 0;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+ul.nav-footer li {
+	display: inline-block;
+	list-style-type: none;
+	line-height: 40px;
+	padding: 0 24px;
+	font-size: 15px;
+	margin-right: -1px;
+}
+.nav-footer a {
+	display: block;
+	color: #656363;
+	text-decoration: none;
+}
+ul.nav-footer li:hover {
+	text-decoration: underline;
+}
+ul.nav-footer li:active,
+ul.nav-footer li.active {
+	text-decoration: underline;
+}
+nav span {
+	float: right;
+	line-height: 40px;
+	margin-right: 40px;
+	color: #656363;
+}
