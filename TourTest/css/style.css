@@ -154,6 +154,11 @@ section.special-offers .offers {
 	text-shadow: 0 -1px 0 rgba(48,51,43,.5);
 }
 
+section.special-offers .offers a {
+	text-decoration: none;
+	color: inherit;
+}
+
 section.special-offers .offers div {
 	display: inline-block;
 	vertical-align: bottom;
@@ -208,7 +213,7 @@ section.special-offers .offers .price {
 	z-index: 2;
 }
 
-section.special-offers div.offer1 {
+section.special-offers .offer1 {
 	margin-top: 20px;
 }
 
@@ -260,6 +265,10 @@ article.what-else {
 
 .advantages ul li span {
 	padding-left: 11px;
+}
+
+.advantages ul li:last-child {
+	margin-bottom: 6px;
 }
 
 .advantages a {
