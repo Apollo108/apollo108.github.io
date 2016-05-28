@@ -1,0 +1,403 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial;
+	font-size: 13px;
+	box-sizing: border-box;
+	color: #333;
+}
+
+.wrapper {
+	max-width: 946px;
+	margin: 0 auto;
+	padding-top: 34px;
+}
+
+ul.header__nav-menu {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.header__nav-menu li {
+	display: inline-block;
+}
+
+ul.header__nav-menu a {
+	padding: 14px 20px;
+	font-size: 16px;
+	color: #0071bb;
+	text-shadow: 0 -1px 0 rgba(48,51,43,.3);
+}
+
+ul.header__nav-menu li:first-child a {
+	position: relative;
+	display: block;
+	background-color: #00b5ed;
+	color: #fff;
+	border-radius: 3px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+ul.header__nav-menu li:first-child a::after {
+	content: "";
+	position: absolute;
+	top: 49px;
+	left: 69px;
+	border: 9px solid transparent;
+	border-top: 12px solid #00b5ed;
+}
+
+nav {
+	display: inline-block;
+}
+
+.header__login {
+	position: relative;
+	display: inline-block;
+	float: right;
+	text-align: left;
+	margin-top: 11px;
+}
+
+.header__login a:first-child {
+	font-size: 12px;
+	color: #f80895;
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
+.header__login a:last-child {
+	font-size: 12px;
+	color: #999;
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
+.header__login::before {
+	position: absolute;
+	left: -20px;
+	content: "";
+	width: 12px;
+	height: 16px;
+	background: url(../images/sprite_tour_test.png) 100% 100% no-repeat;
+}
+
+.header__description {
+	margin-top: 39px;
+}
+
+.header__description h1 {
+	font-size: 18px;
+	padding: 10px 0;
+	background-color: #00baf0;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(48,51,43,.3);
+}
+
+.wrapper::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 122px;
+	left: 0;
+	background-color: #00baf0;
+	width: 100%;
+	height: 41px;
+	z-index: -1;
+}
+
+main {
+	margin-top: 35px;
+}
+
+main::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main h2 {
+	font-size: 19px;
+	font-weight: normal;
+	text-shadow: 0 -1px 0 rgba(48,51,43,.2);
+}
+
+article {
+	display: inline-block;
+	width: 42%;
+	clear: both;
+}
+
+article p, section p {
+	line-height: 20px;
+	margin-top: 20px;
+}
+
+section {
+	float: right;
+	width: 459px;
+}
+
+section.special-offers .offers {
+	position: relative;
+	width: 100%;
+	height: 107px;
+	margin-bottom: 14px;
+	background-image: url(../images/countries.png);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(48,51,43,.5);
+}
+
+section.special-offers .offers div {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+section.special-offers .offers::before {
+	content: "";
+	display: inline-block;
+	min-height: inherit;
+	height: 100%;
+	vertical-align: bottom;
+}
+
+section.special-offers .offers::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 51px;
+	width: 459px;
+	height: 56px;
+	background-color: #000;
+	opacity: 0.4;
+	border-radius: 0 0 5px 5px;
+	z-index: 1;
+}
+
+section.special-offers .offers .fill {
+	display: inline-block;
+	width: 36%;
+}
+
+section.special-offers .offers .fill-2 {
+	display: inline-block;
+	width: 45%;
+}
+
+section.special-offers .offers .fill-3 {
+	display: inline-block;
+	width: 37%;
+}
+
+section.special-offers .offers .places {
+	position: relative;
+	margin-left: 13px;
+	margin-bottom: 10px;
+	z-index: 2;
+}
+
+section.special-offers .offers .price {
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+section.special-offers div.offer1 {
+	margin-top: 20px;
+}
+
+section.special-offers .offers .price {
+	font-size: 11px;
+}
+
+section.special-offers .offers b {
+	font-size: 17px;
+}
+
+section.special-offers span.countries {
+	font-size: 15px;
+}
+
+section.special-offers .offers .price-color {
+	color: #fff000;
+}
+
+section.special-offers .offer2 .price-color {
+	color: #00f0ff;
+}
+
+section.special-offers .offer2 {
+	background-position: 0 50%;
+}
+
+section.special-offers .offer3 {
+	background-position: 0 100%;
+	margin-bottom: 20px;
+}
+
+section.special-offers .offer3 + a {
+	font-size: 12px;
+}
+
+article.what-else {
+	margin-top: 60px;
+}
+
+.advantages ul {
+	list-style: disc inside url(../images/star.png);
+}
+
+.advantages ul li {
+	padding-left: 13px;
+	line-height: 28px;
+}
+
+.advantages ul li span {
+	padding-left: 11px;
+}
+
+.advantages a {
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+.banner {
+	width: 100%;
+	height: 90px;
+	border: 1px solid #dcdcdc;
+	margin-top: 37px;
+	margin-bottom: 7px;
+	font-size: 18px;
+	color: #ededed;
+	line-height: 90px;
+	text-align: center;
+}
+
+.banner + a {
+	font-size: 11px;
+	text-decoration: none;
+	border-bottom: 1px solid;
+	color: #666;
+}
+
+footer {
+	margin-top: 15px;
+	border-top: 1px solid #ebebeb;
+	height: 147px;
+	background-color: #f8f8f8;
+}
+
+footer .centralize {
+	width: 946px;
+	margin: 0 auto;
+	padding: 41px 0;
+}
+
+footer .contacts {
+	clear: both;
+	display: inline-block;
+	font-size: 11px;
+}
+
+footer .contacts p:first-child {
+	margin-bottom: 20px;
+}
+
+footer .partners {
+	float: right;
+	width: 570px;
+	height: 87px;
+	text-align: right;
+	position: relative;
+	margin-top: -18px;
+}
+
+footer .partners a.security {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 15px;
+	margin-bottom: 4px;
+	position: relative;
+	text-decoration: none;
+	border-bottom: 1px solid;
+	font-size: 11px;
+}
+
+footer .partners:before {
+	content: "";
+	display: inline-block;
+	min-height: inherit;
+	height: 100%;
+	vertical-align: bottom;
+}
+
+footer .partners a.security::after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 8px;
+	position: absolute;
+	left: 103%;
+	top: 16%;
+	background: url(../images/sprite_tour_test.png);
+}
+
+footer .partners-logos {
+	width: 567px;
+	height: 43px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(../images/sprite_tour_test.png) -33px -5px no-repeat;
+}
+
+footer .socials {
+	position: absolute;
+	top: 65px;
+	left: 8px;	
+}
+
+footer .socials a {
+	padding: 0;
+	margin-right: 12px;
+}
+
+footer a.link-vk {
+	display: inline-block;
+	width: 40px;
+	height: 22px;
+	background: url(../images/sprite_tour_test.png) -42px -70px no-repeat;
+}
+
+footer a.link-goo {
+	display: inline-block;
+	width: 32px;
+	height: 20px;
+	background: url(../images/sprite_tour_test.png) -94px -71px no-repeat;
+}
+
+footer a.link-tw {
+	display: inline-block;
+	width: 55px;
+	height: 20px;
+	background: url(../images/sprite_tour_test.png) -139px -71px no-repeat;
+}
+
+footer a.link-fb {
+	display: inline-block;
+	width: 47px;
+	height: 20px;
+	background: url(../images/sprite_tour_test.png) -206px -71px no-repeat;
+}
+
+/*@media screen (max-width: 850px) {
+	section {
+		clear: both;
+	}
+}*/
