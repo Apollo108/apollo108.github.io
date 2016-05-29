@@ -11,13 +11,13 @@ body {
 }
 
 .wrapper {
-	max-width: 946px;
+	min-width: 980px;
+	max-width: 1400px;
 	margin: 0 auto;
 	padding-top: 34px;
 }
 
 ul.header__nav-menu {
-	display: inline-block;
 	list-style-type: none;
 	padding: 0;
 }
@@ -47,18 +47,24 @@ ul.header__nav-menu li:first-child a::after {
 	content: "";
 	position: absolute;
 	top: 49px;
-	left: 69px;
+	left: 44%;
 	border: 9px solid transparent;
 	border-top: 12px solid #00b5ed;
 }
 
 nav {
-	display: inline-block;
+	display: block;
+	float: left;
+}
+
+header::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .header__login {
 	position: relative;
-	display: inline-block;
 	float: right;
 	text-align: left;
 	margin-top: 11px;
