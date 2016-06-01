@@ -1,0 +1,64 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background-color: #efefef;
+}
+
+body {
+	box-sizing: border-box;
+	width: 512px;
+	margin: 10px auto 40px auto;
+	padding: 55px 50px 65px 50px;
+	font-size: 13pt;
+	line-height: 27px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+
+.common {
+	padding: 26px 13px 20px 13px;
+	border-bottom: 1px solid #7b7b7b;
+}
+
+.common:last-child {
+	border: none;
+	padding-bottom: 0;
+}
+
+h1 {
+	font-size: 18pt;
+}
+
+h2 {
+	font-size: 13pt;
+}
+
+h3 {
+	font-size: 13pt;
+	font-weight: normal;
+}
+
+img.avka {
+	width: 134px;
+	margin: 22px 0 10px 0;
+	display: inline-block;
+}
+
+.header {
+	text-align: center;
+	padding-top: 0;
+}
+
+main ul {
+	margin-top: 32px;
+	list-style: inside;
+}
+
+.contacts {
+	font-style: normal;
+}
