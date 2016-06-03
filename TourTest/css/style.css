@@ -7,15 +7,13 @@ body {
 	font-family: Arial;
 	font-size: 13px;
 	box-sizing: border-box;
-	color: #333;
-	padding-top: 34px;
-	width: 100%;
 }
 
 .header__nav-log {
 	min-width: 980px;
-	max-width: 1440px;
-	margin: 0 auto 39px auto;	
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 34px 30px 39px 30px;
 }
 
 nav.header__nav {
@@ -71,7 +69,7 @@ ul.header__nav-menu li:first-child a::after {
 	position: relative;
 	float: right;
 	text-align: left;
-	margin-top: 11px;
+	padding-top: 11px;
 }
 
 .header__login a:first-child {
@@ -99,8 +97,10 @@ ul.header__nav-menu li:first-child a::after {
 
 .header__description {
 	min-width: 980px;
-	max-width: 1440px;
+	max-width: 1400px;
 	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .header__description h1 {
@@ -121,7 +121,7 @@ header .descript-background {
 main {
 	margin: 0 auto;
 	min-width: 980px;
-	max-width: 1440px;
+	max-width: 1400px;
 }
 
 main h2 {
@@ -130,9 +130,10 @@ main h2 {
 	text-shadow: 0 -1px 0 rgba(48,51,43,.2);
 }
 
-article {
+.left_info {
 	float: left;
 	max-width: 42%;
+	padding-left: 30px;
 }
 
 article, section {
@@ -146,6 +147,7 @@ article h2, section h2 {
 section {
 	float: right;
 	width: 459px;
+	padding-right: 30px;
 }
 
 section.special-offers .offers {
@@ -219,8 +221,8 @@ section.special-offers .offer3 + a {
 	font-size: 12px;
 }
 
-article.what-else {
-	margin-top: 60px;
+article.advantages {
+	padding-bottom: 60px;
 }
 
 .advantages ul {
@@ -247,12 +249,13 @@ article.what-else {
 
 .advert {
 	min-width: 980px;
-	max-width: 1440px;
+	max-width: 1400px;
 	margin: 0 auto;
+	padding: 0 30px 15px 30px;
+	box-sizing: border-box;
 }
 
 .banner {
-	width: 100%;
 	height: 90px;
 	border: 1px solid #dcdcdc;
 	margin-top: 37px;
@@ -271,22 +274,24 @@ article.what-else {
 }
 
 footer {
-	margin-top: 15px;
 	border-top: 1px solid #ebebeb;
 	height: 147px;
 	background-color: #f8f8f8;
+	width: 100%;
 }
 
 footer .centralize {
 	min-width: 980px;
-	max-width: 1440px;
+	max-width: 1400px;
 	margin: 0 auto;
-	padding: 41px 0 41px 10px;
+	padding: 23px 30px 41px 40px;
+	box-sizing: border-box;
 }
 
 footer .contacts {
 	float: left;
 	font-size: 11px;
+	padding-top: 18px;
 }
 
 footer .contacts p:first-child {
@@ -299,7 +304,6 @@ footer .partners {
 	height: 87px;
 	text-align: right;
 	position: relative;
-	margin-top: -18px;
 }
 
 footer .partners a.security {
