@@ -95,7 +95,7 @@ ul.header__nav-menu li:first-child a::after {
 }
 
 .header__description {
-	min-width: 980px;
+	min-width: 950px;
 	max-width: 1400px;
 	margin: 0 auto;
 	
