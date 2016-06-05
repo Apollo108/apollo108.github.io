@@ -60,7 +60,7 @@ nav ul.nav li.active {
 	border-right: 1px solid #838383;
 }
 
-/*Боковая панель навигации*/
+/*Left-aside*/
 
 aside {
 	width: 240px;
@@ -94,7 +94,7 @@ ul.nav-aside {
 	text-indent: 10px;
 }
 
-/*Центральный блок*/
+/*Central block*/
 
 .clearfix::before, .clearfix::after {
 	content: "";
