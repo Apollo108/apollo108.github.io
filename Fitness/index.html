@@ -5,45 +5,50 @@
 	<title>Fitness</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<div class="header">
-		<div class="logo">
-			<a href="#main_page"><img src="img/main_logo.jpg"></a>
+	<div class="wrapper">
+		<header class="header">
+			<div class="logo">
+				<a href="#"><img src="img/main_logo.jpg"></a>
+			</div>
+			<nav>
+				<ul class="nav">
+					<li><a href="#">Главная</a></li><!--
+					--><li class="active"><a href="#">Товары</a></li><!--
+					--><li><a href="#">О нас</a></li><!--
+					--><li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="main clearfix">
+			<aside>
+				<ul class="nav-aside">
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Планшеты</a></li>
+						<li class="active"><a href="#">Телефоны</a></li>
+						<li><a href="#">Телевизоры</a></li>
+						<li><a href="#">Бытовая техника</a></li>
+						<li><a href="#">Автотовары</a></li>
+					</ul>
+			</aside>
+			<div class="article">
+				<img class="item-image" src="img/main.jpg" alt="item-image">
+				<p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифт ову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>	
+			</div>
 		</div>
-		<nav>
-			<ul class="nav">
-				<li><a href="#main">Главная</a></li><!--
-				--><li class="active"><a href="#items">Товары</a></li><!--
-				--><li><a href="#about">О нас</a></li><!--
-				--><li><a href="#contacts">Контакты</a></li>
-			</ul>
-		</nav>
+		<footer>
+			<nav>
+				<ul class="nav-footer">
+					<li><a href="#main">Главная</a></li><!--
+					--><li class="active"><a href="#items">Товары</a></li><!--
+					--><li><a href="#about">О нас</a></li><!--
+					--><li><a href="#contacts">Контакты</a></li>
+					<span>2014 © All rights reserved</span>
+				</ul>			
+			</nav>
+		</footer>
 	</div>
-	<aside>
-		<ul class="nav-aside">
-				<li><a href="#notebooks">Ноутбуки</a></li>
-				<li><a href="#tablets">Планшеты</a></li>
-				<li class="active"><a href="#phones">Телефоны</a></li>
-				<li><a href="#tv">Телевизоры</a></li>
-				<li><a href="#appliances">Бытовая техника</a></li>
-				<li><a href="#auto">Автотовары</a></li>
-			</ul>
-	</aside>
-	<article>
-		<div class="item-image"></div>
-		<p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>	
-	</article>
-	<footer>
-		<nav>
-			<ul class="nav-footer">
-				<li><a href="#main">Главная</a></li><!--
-				--><li class="active"><a href="#items">Товары</a></li><!--
-				--><li><a href="#about">О нас</a></li><!--
-				--><li><a href="#contacts">Контакты</a></li>
-				<span>2014 © All rights reserved</span>
-			</ul>			
-		</nav>
-	</footer>
 </body>
 </html>

@@ -1,22 +1,29 @@
 * {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
+padding: 0;
+margin: 0;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	width: 1060px;
-	padding: 50px;
+	font-size: 14px;	
+}
+
+.wrapper {
+	width: 95%;
+	max-width: 1060px;
+	padding: 5%;
 	margin: 0 auto;
 	box-shadow: 0 0 5px 0 rgba(0,0,0,.3)
 }
 
-/*Шапка*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*Header*/
 
 nav {
-	min-height: 40px;
 	background: linear-gradient(#5e5e5e, #444343);
 }
 ul.nav {
@@ -51,16 +58,12 @@ nav ul.nav li.active {
 	border-right: 1px solid #838383;
 }
 
-.logo a {
-	display: inline-block;
-}
-
 /*Боковая панель навигации*/
 
 aside {
-	width: 240px;
-	display: inline-block;
-	vertical-align: top;
+	width: 22.64%;
+	float: left;
+	padding-right: 4.71%;
 }
 ul.nav-aside {
 	padding-left: 0;
@@ -91,17 +94,22 @@ ul.nav-aside {
 
 /*Центральный блок*/
 
-article {
-	display: inline-block;
-	margin-left: 38px;
-	width: 678px;
+.clearfix::before, .clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.article {
+	width: 63.96%;
+	float: left;
 }
 .item-image {
-	height: 400px;
-	background: url(../img/main.jpg) center center no-repeat;
 	border: 1px solid #c8c8c8;
+	width: 100%;
+	height: auto;
 }
-article p {
+.article p {
 	padding: 40px 25px;
 	margin: 0;
 	line-height: 21px;
