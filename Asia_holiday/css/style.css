@@ -1,6 +1,5 @@
 body {
 	background: linear-gradient(#128aa7 28px, #5ef0ff 28px, #5ef0ff 29px, #12cee1 29px, #fff 175px, #40c6d3 175px, #1191b1 350px, #0c739f);
-	margin: 0;
 	font-family: Tahoma, sans-serif;
 }
 
@@ -20,33 +19,33 @@ body {
 	background: url(../img/logo.png) no-repeat 28px 11px;
 }
 
-.header__contacts span {
-	display: block;
-}
-
 .header__contacts {
 	float: right;
 	font-size: 12px;
-	margin-right: 34px;
-	margin-bottom: 35px;
+	padding-right: 34px;
+	padding-top: 11px;
 	color: #128aa7;
 }
 
 .contacts__title {
-	margin-top: 11px;
-	margin-bottom: 7px;
+	margin: 0;
 	font-weight: bold;
+	padding-bottom: 8px;
 }
 
 .contacts__phones {
+	margin: 0;
 	line-height: 19px;
+}
+
+.contacts__email {
+	margin: 0;
 }
 
 .header__countries {
 	position: absolute;
 	right: 17px;
 	bottom: 9px;
-	float: right;
 	font-size: 10px;
 }
 
@@ -65,6 +64,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 5px;
+	text-decoration: underline;
 }
 
 .country__nepal,
@@ -73,18 +73,21 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 6px;
+	text-decoration: underline;
 }
 
 .country__srilanka {
 	position: absolute;
 	bottom: 0;
 	left: -6px;
+	text-decoration: underline;
 }
 
 .country__mald {
 	position: absolute;
 	bottom: 0;
 	left: -4px;
+	text-decoration: underline;
 }
 
 a.img__nepal {
@@ -136,7 +139,6 @@ ul.nav__menu > li {
 }
 
 ul.nav__menu > li > a {
-	position: relative;
 	color: #fff;
 	text-decoration: none;
 	display: block;
@@ -220,7 +222,7 @@ ul.nav__menu-dropdown a {
 	margin-left: -30px;
 }
 
-.asmas-wrapper {
+.central-wrapper {
 	overflow: hidden;
 }
 
