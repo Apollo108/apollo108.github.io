@@ -16,103 +16,120 @@ body {
 .header {
 	position: relative;
 	min-height: 175px;
-	background: url(../img/logo.png) no-repeat 28px 11px;
+}
+
+.logo {
+	float: left;
+	padding-left: 30px;
+	padding-top: 11px;
+}
+
+.logo img, .logo a {
+	display: block;
+}
+
+.header__rightblock {
+	float: right;
+	padding-right: 34px;
+}
+
+/*CLEARFIX*/
+
+.clearfix:after, .clearfix:before {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 .header__contacts {
 	float: right;
 	font-size: 12px;
-	padding-right: 34px;
-	padding-top: 11px;
+	padding-top: 9px;
 	color: #128aa7;
 }
 
 .contacts__title {
 	margin: 0;
 	font-weight: bold;
-	padding-bottom: 8px;
+	padding-bottom: 5px;
 }
 
 .contacts__phones {
 	margin: 0;
-	line-height: 19px;
+	line-height: 18px;
 }
 
 .contacts__email {
 	margin: 0;
 }
 
-.header__countries {
-	position: absolute;
-	right: 17px;
-	bottom: 9px;
+ul.header__countries {
+	float: right;
+	clear: right;
 	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	padding-top: 33px;
+	list-style-type: none;
 }
 
-.header__countries a {
-	position: relative;
+.header__countries li {
 	display: inline-block;
-	margin-right: 16px;
+	margin-right: 3px;
+}
+
+.header__countries li:last-child {
+	margin-right: 0;
+}
+
+a.countries {
+	display: block;
+	width: 52px;
+	position: relative;
+	padding-top: 43px;
+	white-space: nowrap;
+	text-align: center;
+}
+
+a.countries:hover {
+	text-decoration: none;	
+}
+
+a.countries::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -21px;
 	width: 42px;
 	height: 42px;
 	background: url(../img/countries.png) no-repeat 0 0;
-	white-space: nowrap;
-	padding-top: 15px;
 }
 
-.country__india {
-	position: absolute;
-	bottom: 0;
-	left: 5px;
-	text-decoration: underline;
-}
-
-.country__nepal,
-.country__tibet,
-.country__buthan {
-	position: absolute;
-	bottom: 0;
-	left: 6px;
-	text-decoration: underline;
-}
-
-.country__srilanka {
-	position: absolute;
-	bottom: 0;
-	left: -6px;
-	text-decoration: underline;
-}
-
-.country__mald {
-	position: absolute;
-	bottom: 0;
-	left: -4px;
-	text-decoration: underline;
-}
-
-a.img__nepal {
+a.nepal::before {
 	background-position: -58px 0;
 }
 
-a.img__tibet {
+a.tibet::before {
 	background-position: -114px 0;
 }
 
-a.img__buthan {
+a.buthan::before {
 	background-position: -169px 0;
 }
 
-a.img__srilanka {
+a.srilanka::before {
 	background-position: -225px 0;
 }
 
-a.img__mald {
+a.maldives::before {
 	background-position: -282px 0;
 }
 
 .main-image img {
 	border-top: 1px solid #128aa7;
 	border-bottom: 1px solid #128aa7;
+	display: block;
 }
 
 /*NAVIGATION MENU*/
@@ -125,13 +142,16 @@ ul.nav__menu-dropdown {
 
 ul.nav__menu {
 	position: relative;
-	top: -2px;
 	background: linear-gradient(#373737, #303030);
 	border-top: #cacbcb;
 	border-bottom: #000;
 	padding: 0 33px;
 	font-size: 14px;
 	box-shadow: 0 0 4px 0 rgba(0,0,0,1);
+}
+
+ul.nav__menu a:hover {
+	color: #bbb;
 }
 
 ul.nav__menu > li {
@@ -146,10 +166,17 @@ ul.nav__menu > li > a {
 	padding: 0px 30px;
 }
 
-.nav__menu a.arrow {
+.nav__menu a.arrow::after {
+	position: absolute;
+	content: '';
 	background: url(../img/arrow.png) no-repeat;
-	-webkit-background-size: 8px;
-	background-size: 7px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 5px;
+	height: 6px;
+	top: 50%;
+	right: 20px;
+	margin-top: -2px;
 }
 
 .nav__menu a.arrow1 {
@@ -162,7 +189,9 @@ ul.nav__menu > li > a {
 	background-position: 86% 50%;
 }
 
-.nav__menu li:nth-child(2) {
+.nav__menu li:nth-child(2),
+.nav__menu li:nth-child(3),
+.nav__menu li:nth-child(4) {
 	position: relative;
 }
 
@@ -177,14 +206,16 @@ ul.nav__menu-dropdown {
 	transition: all 0.3s;
 }
 
-ul.nav__menu li:nth-child(2):hover ul.nav__menu-dropdown {
+ul.nav__menu li:nth-child(2):hover ul.nav__menu-dropdown,
+ul.nav__menu li:nth-child(3):hover ul.nav__menu-dropdown,
+ul.nav__menu li:nth-child(4):hover ul.nav__menu-dropdown {
 	visibility: visible;
 	opacity: 1;
 }
 
-ul.nav__menu-dropdown li:hover a {
+/*ul.nav__menu-dropdown li:hover a {
 	color: #bbb;
-}
+}*/
 
 ul.nav__menu-dropdown a {
 	display: block;

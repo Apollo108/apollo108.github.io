@@ -9,27 +9,30 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__contacts">
-				<p class="contacts__title">Наши контакты:</p>
-				<p class="contacts__phones">+9-098-765-4321<br>
-				+9-0123-456-890</p>
-				<p class="contacts__email">info@asia-holidays.com</p>
-			</div>
-			<div class="header__countries">
-				<a href="#"><span class="country__india">Индия</span></a><!--
-				--><a href="#" class="img__nepal"><span class="country__nepal">Непал</span></a><!--
-				--><a href="#" class="img__tibet"><span class="country__tibet">Тибет</span></a><!--
-				--><a href="#" class="img__buthan"><span class="country__buthan">Бутан</span></a><!--
-				--><a href="#" class="img__srilanka"><span class="country__srilanka">Шри-Ланка</span></a><!--
-				--><a href="#" class="img__mald"><span class="country__mald">Мальдивы</span></a>
+			<div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+			<div class="header__rightblock clearfix">
+				<div class="header__contacts">
+					<p class="contacts__title">Наши контакты:</p>
+					<p class="contacts__phones">+9-098-765-4321</p>
+					<p class="contacts__phones">+9-0123-456-890</p>
+					<p class="contacts__email">info@asia-holidays.com</p>
+				</div>
+				<ul class="header__countries">
+					<li><a href="#" class="countries india">Индия</a></li>
+					<li><a href="#" class="countries nepal">Непал</a></li>
+					<li><a href="#" class="countries tibet">Тибет</a></li>
+					<li><a href="#" class="countries buthan">Бутан</a></li>
+					<li><a href="#" class="countries srilanka">Шри-Ланка</a></li>
+					<li><a href="#" class="countries maldives">Мальдивы</a></li>
+				</ul>
 			</div>
 		</header>
-		<div class="main-image"><img src="img/main.jpg" alt=""></div>
+		<div class="main-image"><img src="img/main.jpg" alt="main-image"></div>
 		<nav>
 			<ul class="nav__menu">
 				<li><a href="#">Главная</a></li>
-				<li><a href="#" class="arrow arrow1 droplink">Путешествие</a>
-					<ul id="myDropdown" class="nav__menu-dropdown">
+				<li><a href="#" class="arrow arrow1">Путешествие</a>
+					<ul class="nav__menu-dropdown">
 						<li><a href="#">Путешествие 1</a></li>
 						<li><a href="#">Путешествие 2</a></li>
 						<li><a href="#">Путешествие 3</a></li>
@@ -37,8 +40,18 @@
 						<li><a href="#">Путешествие 5</a></li>
 					</ul>
 				</li>
-				<li><a href="#" class="arrow arrow2">Услуги</a></li>
-				<li><a href="#" class="arrow arrow3">Партнерам</a></li>
+				<li><a href="#" class="arrow arrow2">Услуги</a>
+					<ul class="nav__menu-dropdown">
+						<li><a href="#">Услуга 1</a></li>
+						<li><a href="#">Услуга 2</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="arrow arrow3">Партнерам</a>
+					<ul class="nav__menu-dropdown">
+						<li><a href="#">Предложение 1</a></li>
+						<li><a href="#">Предложение 2</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Отзывы клиентов</a></li>
 				<li><a href="#">О нас</a></li>
 				<li><a href="#">Контакты</a></li>
