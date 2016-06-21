@@ -458,10 +458,6 @@ ul.menu__main-nav li:last-child a {
 
 /*MAIN*/
 
-.main {
-	float: left;
-}
-
 .search-coupon {
 	padding-bottom: 10px;
 }
@@ -473,7 +469,7 @@ ul.menu__main-nav li:last-child a {
 
 .search-coupon__searchform {
 	position: relative;
-	width: 202px;
+	width: 200px;
 	border: 1px solid #ffc412;
 }
 
@@ -641,7 +637,8 @@ ul.sidebar__categoriesList {
 
 .main {
 	float: left;
-	padding: 0 0 10px 15px;
+	width: 760px;
+	padding: 0 0 16px 6px;
 }
 
 .item {
@@ -649,7 +646,7 @@ ul.sidebar__categoriesList {
 	width: 241px;
 	border: 1px solid #edf1f2;
 	border-radius: 2px;
-	margin-right: 9px;
+	margin-left: 10px;
 	margin-bottom: 10px;
 }
 
