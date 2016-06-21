@@ -820,5 +820,6 @@ p.item__moreInfo::before {
 	float: right;
 	width: 243px;
 	height: 402px;
+	margin-bottom: 10px;
 	background: gray;
 }
