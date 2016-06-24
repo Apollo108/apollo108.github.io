@@ -1,6 +1,0 @@
-.sprite { background: url('sprite.png') no-repeat top left; width: 71px; height: 45px;  } 
-.sprite.VISA { background-position: 0px 0px;  } 
-.sprite.MASTER { background-position: 0px -50px;  } 
-.sprite.AMEX { background-position: 0px -100px;  } 
-.sprite.DInner { background-position: 0px -150px;  } 
-.sprite.DInnercopy { background-position: 0px -200px;  } 
