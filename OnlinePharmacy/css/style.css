@@ -941,8 +941,8 @@ a.item__button span {
 	width: 243px;
 	height: 402px;
 	margin-bottom: 10px;
-	background: url(../img/pills/viagraBig.png) 95px 72px no-repeat,
-				url(../img/pills/cialisBig.png) 16px 160px no-repeat,
+	background: url(../img/viagraBig.png) 95px 72px no-repeat,
+				url(../img/cialisBig.png) 16px 160px no-repeat,
 				linear-gradient(179deg, #000 60px, #ffe301 61px);
 	border-radius: 1px;
 	overflow: hidden;
