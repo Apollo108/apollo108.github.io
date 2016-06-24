@@ -1,0 +1,3 @@
+.sprite { background: url('sprite.png') no-repeat top left;  } 
+.sprite.rocket { background-position: 0px 0px; width: 32px; height: 30px;  } 
+.sprite.pills { background-position: 0px -35px; width: 40px; height: 39px;  } 
