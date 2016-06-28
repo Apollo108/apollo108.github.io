@@ -366,7 +366,7 @@ select[name='year'] {
 	background-position: 38px -228px;
 }
 
-.filters__autoHead button {
+.filters button {
 	float: right;
 	color: #154467;
 	font-family: Arial;
