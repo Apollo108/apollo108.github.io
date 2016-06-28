@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Zazor</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__topbar clearfix">
+				<div class="topbar__phones">
+					<p>(044)123-45-67<span class="rightPhone">(044)567-89-10</span></p>
+				</div>
+				<div class="topbar__auth">
+					<form action="#" method="post" class="topbar__authForm">
+						<input type="login" placeholder="логин">
+						<input type="password" placeholder="пароль">
+						<button type="submit">вход</button>
+						<a href="#" class="reg">регистрация</a>
+						<a href="#" class="forgot">забыли пароль?</a>
+					</form>
+				</div>
+				<div class="topbar__iconsRight">
+					<a href="#" class="home"></a>
+					<a href="#" class="sitemap"></a>
+					<a href="#" class="email"></a>
+				</div>
+			</div>
+			<img src="img/header-logo.png" alt="Main Logo" class="header__logo">
+			<!-- <div class="header__image">
+				<div class="header__logo">
+					<p>zazor.com.ua</p>
+					<p>drives you away</p>
+				</div>
+			</div> -->
+				<div class="header__nav-cart clearfix">
+					<nav class="header__navbar">
+						<ul class="header__menu">
+							<li><a href="#" class="active">О КОМПАНИИ</a></li>
+							<li><a href="#">ОПЛАТА</a></li>
+							<li><a href="#">ДОСТАВКА</a></li>
+							<li><a href="#">СТАТЬИ</a></li>
+							<li><a href="#">КОНТАКТЫ</a></li>
+						</ul>
+					</nav>
+					<div class="header__cart clearfix">
+						<p class="cart">товаров:<span class="zero">0</span></p>
+						<p class="total">на сумму:<span class="zeros">0,00 грн.</span></p>
+					</div>
+				</div>
+		</header>
+		<div class="filters clearfix">
+			<form action="#" method="post" class="filters__auto">
+				<div class="filters__autoHead clearfix">
+					<h2>Диски:</h2>
+					<h1>Поиск по автомобилю</h1>
+					<h2>Шины:</h2>
+				</div>
+
+				<div class="selectBlock leftSelect clearfix">
+					<div class="selectLabels">
+						<p>Марка <span>авто:</span></p>
+						<p>Модель <span>автомобиля:</span></p>
+						<p>Год выпуска <span>автомобиля:</span></p>
+						<p>Комплектация:</p>
+					</div>
+					<div class="selectGroup">
+						<select name="make" id="tyres__carmake">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+						</select>
+						<select name="model" id="tyres__carModel">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+						</select>
+						<select name="year" id="tyres__carYear">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+						</select>
+						<select name="equipment" id="tyres__carEquipment">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="selectBlock rightSelect clearfix">
+					<div class="selectLabels">
+						<p>Марка <span>авто:</span></p>
+						<p>Модель <span>автомобиля:</span></p>
+						<p>Год выпуска <span>автомобиля:</span></p>
+						<p>Комплектация:</p>
+					</div>
+					<div class="selectGroup">
+						<select name="make" id="rims__carmake">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+						</select>
+						<select name="model" id="rims__carModel">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+						</select>
+						<select name="year" id="rims__carYear">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+						</select>
+						<select name="equipment" id="rims__carEquipment">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+						</select>
+					</div>
+				</div>
+				<button>поиск...</button>
+			</form>
+			<form class="filters__tyres clearfix">
+				<h1>поиск шин</h1>
+				<div class="selectLabels">
+					<p>Размер:</p>
+					<p>R:</p>
+					<p>Сезон:</p>
+				</div>
+				<div class="selectGroup">
+					<select name="size" id="tyres__size">
+						<option>145</option>
+						<option>135</option>
+						<option>125</option>
+						<option>115</option>
+					</select>
+					<p class="slash">/</p>
+					<select name="size" id="tyres__size">
+						<option>1</option>
+						<option>1</option>
+						<option>1</option>
+					</select>
+					<select name="radius" id="tyres__radius">
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+					</select>
+					<div class="checkboxWrapper clearfix">
+						<input id="chbSummer" type="checkbox">
+						<label for="chbSummer">лето</label>
+
+						<input id="chbWinter" type="checkbox">
+						<label for="chbWinter">зима</label>
+
+						<input id="chbAllseason" type="checkbox">
+						<label for="chbAllseason">всесез</label>
+					</div>
+				</div>
+				<button>поиск...</button>
+			</form>
+			<form class="filters__rims"></form>
+		</div>
+	</div>
+</body>
+</html>
