@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper clearfix">
 		<header class="header">
 			<div class="header__topbar clearfix">
 				<div class="topbar__phones">
@@ -51,6 +51,7 @@
 					</div>
 				</div>
 		</header>
+		<!-- FILTERS -->
 		<div class="filters clearfix">
 			<form action="#" method="post" class="filters__auto">
 				<div class="filters__autoHead clearfix">
@@ -185,51 +186,183 @@
 				<button>поиск...</button>
 			</form>
 
-			<form class="filters__rims">
-				<h1>поиск шин</h1>
-				<div class="selectLabels">
-					<p>Марка <span>авто:</span></p>
-					<p>Модель <span>автомобиля:</span></p>
-					<p>Год выпуска <span>автомобиля:</span></p>
-					<p>Комплектация:</p>
+			<form class="filters__rims clearfix">
+				<h1>поиск дисков</h1>
+				<div class="selectBlock leftSelect clearfix">
+					<div class="selectLabels">
+						<p>Диаметр <span>диска:</span></p>
+						<p>Количество <span>крепежных отверстий:</span></p>
+						<p>Диаметр <span>расположения крепежных отверстий:</span></p>
+					</div>
+					<div class="selectGroup">
+						<select name="diameter" id="rims__diameter">
+							<option>14</option>
+							<option>15</option>
+							<option>16</option>
+						</select>
+						<select name="MHoles" id="rims__MH">						
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>						
+						</select>
+						<select name="DMHL" id="rims__DMHL">
+							<option>12</option>
+							<option>13</option>
+							<option>14</option>
+						</select>					
+					</div>
+				</div>	
+				<div class="selectBlock rightSelect">
+					<p>ДЦО <span>(диаметр центрального отверстия)</span></p>
+					<select name="DCH">
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+					</select>
+					<p>ЕТ<br><span>(вылет диска)</span></p>
+					<select name="ET">
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+					</select>
 				</div>
-				<div class="selectGroup">
-					<select name="make" id="tyres__carmake">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-					</select>
-					<select name="model" id="tyres__carModel">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-					</select>
-					<select name="year" id="tyres__carYear">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-					</select>
-					<select name="equipment" id="tyres__carEquipment">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-					</select>
-				</div>			
 				<button>поиск...</button>
 			</form>
 		</div>
+		<!-- END OF FILTERS -->
+		
+		<!-- ASIDE LEFT -->
+		<aside class="catalogueLeft">
+			<h2><span>КАТАЛОГ ПРОДУКЦИИ:</span></h2>
+			<div class="catalogueLeft__list catalogueLeft__tyres">
+				<h3><span>ШИНЫ</span></h3>
+				<ul>
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#" class="active">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul>
+			</div>
+			<div class="catalogueLeft__list catalogueLeft__rims">
+				<h3><span>ДИСКИ</span></h3>
+				<ul>
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul>
+			</div>
+			<div class="catalogueLeft__list catalogueLeft__bolts">
+				<h3><span>БОЛТЫ</span></h3>
+				<ul>
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul>
+			</div>
+		</aside>
+		<!-- END OF ASIDE LEFT -->
+
+		<!-- MAIN -->
+		<div class="main clearfix">
+			<div class="item item1">
+				<p class="item__brand">Goodyear</p>
+				<p class="item__model">Ultra Grip Extreme</p>
+				<div class="item__image"><a href="#"><img src="img/wheel1.png" alt="item_image"></a></div>
+				<p class="item__price">90.00 <span>грн</span></p>
+			</div>
+
+			<div class="item item2">
+				<p class="item__brand">Nokian</p>
+				<p class="item__model">Hakkspeliitta R</p>
+				<div class="item__image"><a href="#"><img src="img/wheel2.png" alt="item_image"></a></div>
+				<p class="item__price">115.00 <span>грн</span></p>
+			</div>
+
+			<div class="item item3">
+				<p class="item__brand">Hankook</p>
+				<p class="item__model">K 708 155/65 R14</p>
+				<div class="item__image"><a href="#"><img src="img/wheel3.png" alt="item_image"></a></div>
+				<p class="item__price">393.00 <span>грн</span></p>
+			</div>
+
+			<div class="item item1">
+				<p class="item__brand">Goodyear</p>
+				<p class="item__model">Ultra Grip Extreme</p>
+				<div class="item__image"><a href="#"><img src="img/wheel1.png" alt="item_image"></a></div>
+				<p class="item__price">90.00 <span>грн</span></p>
+			</div>
+
+			<div class="item item2">
+				<p class="item__brand">Nokian</p>
+				<p class="item__model">Hakkspeliitta R</p>
+				<div class="item__image"><a href="#"><img src="img/wheel2.png" alt="item_image"></a></div>
+				<p class="item__price">115.00 <span>грн</span></p>
+			</div>
+
+			<div class="item item3">
+				<p class="item__brand">Hankook</p>
+				<p class="item__model">K 708 155/65 R14</p>
+				<div class="item__image"><a href="#"><img src="img/wheel3.png" alt="item_image"></a></div>
+				<p class="item__price">393.00 <span>грн</span></p>
+			</div>
+
+			<div class="item item1">
+				<p class="item__brand">Goodyear</p>
+				<p class="item__model">Ultra Grip Extreme</p>
+				<div class="item__image"><a href="#"><img src="img/wheel1.png" alt="item_image"></a></div>
+				<p class="item__price">90.00 <span>грн</span></p>
+			</div>
+
+			<div class="item item2">
+				<p class="item__brand">Nokian</p>
+				<p class="item__model">Hakkspeliitta R</p>
+				<div class="item__image"><a href="#"><img src="img/wheel2.png" alt="item_image"></a></div>
+				<p class="item__price">115.00 <span>грн</span></p>
+			</div>
+
+			<div class="item item3">
+				<p class="item__brand">Hankook</p>
+				<p class="item__model">K 708 155/65 R14</p>
+				<div class="item__image"><a href="#"><img src="img/wheel3.png" alt="item_image"></a></div>
+				<p class="item__price">393.00 <span>грн</span></p>
+			</div>
+		</div>
+		<!-- END OF MAIN -->
+		<aside class="brandFilterRight">
+			<h2><span>БРЕНДЫ:</span></h2>
+			<form class="brandFilterRight__form">
+				<div class="brandFilterRight__block brandFilterRight__tyres">
+					<h3><span>ШИНЫ</span></h3>					
+					<label><input type="checkbox" id="tyres__brand1"><span>Бренд 1</span></label>
+					
+					<label><input type="checkbox" id="tyres__brand2"><span>Бренд 2</span></label>
+					
+					<label><input type="checkbox" id="tyres__brand3"><span>Бренд 3</span></label>
+				</div>
+				<div class="brandFilterRight__block brandFilterRight__rims">
+					<h3><span>ДИСКИ</span></h3>
+					<label><input type="checkbox" id="rims__brand1"><span>Бренд 1</span></label>
+					
+					<label><input type="checkbox" id="rims__brand2"><span>Бренд 2</span></label>
+					
+					<label><input type="checkbox" id="rims__brand3"><span>Бренд 3</span></label>
+				</div>
+				<button>ВЫБРАТЬ</button>
+			</form>
+		</aside>		
+		<img class="logotypes" src="img/logos.png" alt="logotypes">
+		<footer class="footer">
+			<ul class="footer__menu">
+				<li><a href="#" class="active">О компании</a></li><!-- 
+				 --><li><a href="#">Доставка</a></li><!-- 
+				 --><li><a href="#">Статьи</a></li><!-- 
+				 --><li><a href="#">Контакты</a></li>
+			</ul>
+			<p class="copyright">Создание сайта © Global Vision</p>
+		</footer>
+
 	</div>
 </body>
 </html>
