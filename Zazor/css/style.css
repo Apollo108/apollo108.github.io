@@ -53,7 +53,7 @@ body {
 .topbar__auth {
 	position: relative;
 	font-family: "Lucida Sans Unicode", sans-serif;
-	padding: 0px 10px 0px 24px;
+	padding: 2px 10px 0px 24px;
 	background-color: #b1bcc0;
 	background-image: -webkit-linear-gradient(#206988 0%, #114165 59%, #0c3256 100%);
 	background-image: -o-linear-gradient(#206988 0%, #114165 59%, #0c3256 100%);
@@ -89,7 +89,7 @@ body {
 	border: 1px solid #9ba1a3;
 	border-radius: 2px;
 	padding: 2px 0 2px 4px;
-	margin-bottom: 3px;
+	margin-bottom: 7px;
 	box-sizing: border-box;
 	vertical-align: middle;
 	outline: none;
