@@ -53,7 +53,7 @@ body {
 .topbar__auth {
 	position: relative;
 	font-family: "Lucida Sans Unicode", sans-serif;
-	padding: 3px 10px 0px 24px;
+	padding: 0px 10px 0px 24px;
 	background-color: #b1bcc0;
 	background-image: -webkit-linear-gradient(#206988 0%, #114165 59%, #0c3256 100%);
 	background-image: -o-linear-gradient(#206988 0%, #114165 59%, #0c3256 100%);
@@ -89,7 +89,7 @@ body {
 	border: 1px solid #9ba1a3;
 	border-radius: 2px;
 	padding: 2px 0 2px 4px;
-	margin-bottom: 7px;
+	margin-bottom: 3px;
 	box-sizing: border-box;
 	vertical-align: middle;
 	outline: none;
@@ -115,7 +115,7 @@ body {
 	cursor: pointer;
 	padding: 0;
 	padding-left: 3px;
-	margin-bottom: 7px;
+	margin-bottom: 3px;
 }
 
 .topbar__authForm button:hover {
@@ -125,7 +125,7 @@ body {
 .topbar__auth a.reg {
 	display: inline-block;
 	vertical-align: middle;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 	margin-left: 10px;
 	position: relative;
 	/*top: -2px;
@@ -635,6 +635,7 @@ aside.catalogueLeft {
 
 aside.catalogueLeft h2,
 aside.brandFilterRight h2 {
+	position: relative;
 	width: 177px;
 	border: 1px solid #79878d;
 	border-radius: 12px;
@@ -644,22 +645,26 @@ aside.brandFilterRight h2 {
 	font-size: 13px;
 	line-height: 14px;
 	font-weight: normal;
-	padding: 2px 2px;
+	padding: 5px 2px;
 	margin-bottom: 13px;
 }
 
-aside.catalogueLeft h2::before {
-	display: inline-block;
+aside.catalogueLeft h2::before,
+aside.brandFilterRight h2::before {
+	position: absolute;
+	top: 1px;
+	left: 2px;
+	display: block;
 	content: '';
 	width: 22px;
 	height: 21px;
 	background: url('../img/sprite.png') no-repeat 0 -127px;
-	vertical-align: middle;
 }
 
-aside.catalogueLeft h2 span {
-	vertical-align: middle;
-	padding-left: 4px;
+aside.catalogueLeft h2 span,
+aside.brandFilterRight h2 span {
+	display: block;
+	padding-left: 26px;
 }
 
 aside.catalogueLeft h3 {
@@ -828,20 +833,6 @@ aside.brandFilterRight {
 
 .brandFilterRight__rims {
 	padding-bottom: 20px;
-}
-
-aside.brandFilterRight h2::before {
-	display: inline-block;
-	content: '';
-	width: 22px;
-	height: 21px;
-	background: url('../img/sprite.png') no-repeat 0 -127px;
-	vertical-align: middle;
-}
-
-aside.brandFilterRight h2 span {
-	vertical-align: middle;
-	padding-left: 4px;
 }
 
 aside.brandFilterRight h3 {
