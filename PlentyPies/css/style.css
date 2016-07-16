@@ -23,19 +23,7 @@ p {
 	box-shadow: 2px 7px 15px 2px rgba(0,0,0,0.6);
 }
 
-ol.carousel-indicators {
-	opacity: .5;
-}
-
-ol.carousel-indicators:hover {
-	opacity: 1;
-}
-
-a.carousel-control {
-	opacity: .3;
-}
-
-.carousel {
+.carousel-wrapper {
 	position: relative;
 }
 
@@ -225,7 +213,7 @@ main.main * {
 	box-sizing: border-box;
 }
 
-img.central_big_image {
+.central_big_image {
 	display: block;
 	width: 100%;
 	height: auto;
