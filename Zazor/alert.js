@@ -1,8 +1,5 @@
-var value = prompt('Enter any number', '');
-if (value > 0) {
-	alert('1')
-} else if (value < 0) {
-	alert('-1');
-} else {
-	alert('0');
-}
+var myList = ['apples', 'oranges', 'bananas'];
+
+myList.forEach(function(value, index) {
+	console.log(value, index);
+});

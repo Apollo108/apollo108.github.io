@@ -758,6 +758,9 @@ a.faq__faqSection::before {
 	width: 119px;
 	height: 83px;
 	padding: 8px 15px 6px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	box-sizing: border-box;
 	text-align: center;
 }
@@ -1106,6 +1109,9 @@ a.banner__button:active {
 	width: 50%;
 	height: 100%;
 	border-right: 1px solid #edf1f2;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-top: 11px;
 }
@@ -1114,6 +1120,9 @@ a.banner__button:active {
 	float: right;
 	width: 50%;
 	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-top: 11px;
 }
