@@ -17,13 +17,11 @@
 		<div class="carousel-wrapper">
 			<img src="img/sticker_champ.png" alt="sticker_champ" class="sticker_champ">
 			<div class="sticker_this_week">
+				<img src="img/sticker_black_shape.png" alt="sticker_black_shape">
 				<p class="this_week">This week</p>
 				<p class="we_will_be">We will be at: Cheltenham Farmers Market (Fri) & Stroud Farmers Market (Sat)</p>
 			</div>
 			<div class="carousel">				
-				<div class="carousel__item">
-					<img src="img/carousel_image.jpg" alt="carousel_image">
-				</div>
 				<div class="carousel__item">
 					<img src="img/carousel_image.jpg" alt="carousel_image">
 				</div>
@@ -41,7 +39,28 @@
 					<p>Developing a great British tradition: <span>adding excitement & sophistication</span></p>
 				</div>
 				<div class="head-info__logo head-info__item">
+
 					<img src="img/plenty_logo.png" alt="plenty_logo">
+					<div class="nav-mobile-trigger">
+
+						<!-- MOBILE NAVIGATION -->
+						<nav class="nav-mobile">
+							<ul class="nav-mobile__menu nav-mobile__menu-main clearfix">
+								<li><a href="#">Our Story</a></li>
+								<li><a href="#">Our Pies!</a></li>
+								<li><a href="#">Trade</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Events</a></li>
+								<li><a href="#">Press</a></li>
+								<li><a href="#">Order</a></li>
+							</ul>
+							<ul class="nav-mobile__menu nav-mobile__menu-socials clearfix">
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Facebook</a></li>			        
+							</ul>						
+						</nav>
+						<!-- /MOBILE NAVIGATION -->
+					</div>
 				</div>
 				<div class="head-info__right head-info__item">
 					<p>Order now on <span class="phones">07967 006 970</span> <b>or</b> <span class="phones">07807 838745</span> plentypastry@gmail.com</p>
@@ -63,12 +82,21 @@
 						<li><a href="#">Events</a></li>
 						<li><a href="#">Press</a></li>
 						<li><a href="#">Order</a></li>
-					</ul>				
+					</ul>
 				</nav>
 			</div>
 			<!-- /NAVIGATION -->
 		</header>
 		<!-- /HEADER -->
+
+		<div class="carousel-mobile">				
+			<div class="carousel__item">
+				<img src="img/carousel_image.jpg" alt="carousel_image">
+			</div>
+			<div class="carousel__item">
+				<img src="img/carousel_image.jpg" alt="carousel_image">
+			</div>
+		</div>
 
 		<div class="central_big_image"><img src="img/central_static_image.jpg" alt="central_image"></div>
 
@@ -129,35 +157,51 @@
 
   <!-- <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script> -->
-	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/slick_init.js"></script>
 
-	<script>
+	<!-- <script>
 	  	$(function() {
 	  		var nav = $(".nav");
 	  		var navHomeY = nav.offset().top;
-	  		var isFixed = false;
 	  		var $w = $(window);
-	  		$w.scroll(function () {
+	  		$w.scroll(function() {
 	  			var scrollTop = $w.scrollTop();
-	  			var shouldBeFixed = scrollTop > navHomeY;
-	  			if (shouldBeFixed && !isFixed) {
+	  			if (shouldBeFixed = scrollTop > navHomeY) {
 	  				nav.css({
 	  					position: "fixed",
 	  					top: 0,
 	  					left: nav.offset().left,
 	  					width: nav.width()
 	  				});
-	  				isFixed = true;
-	  			} else if (!shouldBeFixed && isFixed) {
+	  			} else {
 	  				nav.css({
 	  					position: "static"
 	  				});
-	  				isFixed = false;
 	  			}
 	  		});
 	  	});
-	</script>
+	</script> -->
+
+	<!-- <script>
+		$(function() {
+	  		var nav = $(".nav");
+	  		$(window).bind('scroll', function () {
+			    if ($(window).scrollTop() > 588) {
+			        nav.css({
+	  					position: "fixed",
+	  					top: 0,
+	  					left: nav.offset().left,
+	  					width: nav.width()
+	  				});
+			    } else {
+			        nav.css({
+	  					position: "static"
+	  				});
+			    }
+			});
+	  	});
+	</script> -->
 </body>
 </html>
